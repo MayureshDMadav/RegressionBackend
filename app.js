@@ -1,11 +1,16 @@
 const express = require("express");
 var request = require("request");
 const app = express();
+const cors = require("cors");
+
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 
 app.get("/", (req, res) => {
   let data = req.query;
-
-  console.log(JSON.stringify(data));
 
   var options = {
     method: "POST",
