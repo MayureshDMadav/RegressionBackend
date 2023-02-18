@@ -2,7 +2,7 @@
   "name": "regressionback",
   "version": "1.0.0",
   "description": "regression backend",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "build": "netlify deploy --prod"
   },
