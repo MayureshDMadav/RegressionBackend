@@ -2,7 +2,7 @@ const express = require("express");
 var request = require("request");
 const app = express();
 
-app.get("/backend", (req, res) => {
+app.get("/", (req, res) => {
   let data = req.query;
 
   console.log(JSON.stringify(data));
